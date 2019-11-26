@@ -2,8 +2,6 @@ const express = require('express');
 const nextJS = require('next');
 const { isBlockedPage, isInternalUrl } = require('next-server/dist/server/utils');
 
-console.log('\n\n\n\nn\ ------------------\n\n\\n\n');
-
 async function start() {
     const dev = process.env.NODE_ENV !== 'production';
     const app = nextJS({dev});
