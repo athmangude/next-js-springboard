@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-// @connect((state) => ({ items: state.items }))
-class Home extends Component {
-    // static async getInitialProps(ctx) {
-    //     console.log(ctx);
-    // }
-    
+@connect((state) => ({ items: state.items }))
+export default class Home extends Component {
     render() {
         return (
             <div>
@@ -16,4 +12,4 @@ class Home extends Component {
     }
 }
 
-export default connect((state) => ({ items: state.items }))(Home);
+// export default connect((state) => ({ items: state.items }))(Home);
