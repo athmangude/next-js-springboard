@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import initialize from '../utils/initialize';
 
 @connect((state) => ({ items: state.items }))
 export default class Home extends Component {
+    static getInitialProps(ctx) {
+        initialize(ctx);
+    }
+    
     render() {
         return (
             <div>

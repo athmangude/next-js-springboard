@@ -9,7 +9,15 @@ export const setCookie = (key, value) => {
     }
 };
 
-const getCookieFromServer = (key, req) => {
+export const getCookie = (key) => {
+    return cookie.get(key);
+}
+
+export function removeCookie(key) {
+    cookie.remove(key);
+}
+
+export const getCookieFromServer = (key, req) => {
     if (!req.headers.cookie) {
         return undefined;
     }

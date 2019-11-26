@@ -1,3 +1,3 @@
 export default {
-    apiUrl: window.location.href,
+    apiUrl: 'http://localhost:4040',
 }
