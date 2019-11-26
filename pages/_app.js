@@ -7,7 +7,7 @@ class MyApp extends App {
     static async getInitialProps({ Component, ctx }) {
         return {
             pageProps: {
-                ...App(Component.getInitialProps ? await Component.getInitialProps(ctx) : {})
+                ...(Component.getInitialProps ? await Component.getInitialProps(ctx) : {})
             }
         };
     }
@@ -17,7 +17,7 @@ class MyApp extends App {
 
         return (
             <Container>
-                <Provider>
+                <Provider store={store}>
                     <Component {...pageProps} />
                 </Provider>
             </Container>
