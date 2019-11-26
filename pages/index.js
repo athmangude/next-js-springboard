@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import initialize from '../utils/initialize';
+import initialize from 'Utils/initialize';
 
 @connect((state) => ({ items: state.items }))
 export default class Home extends Component {

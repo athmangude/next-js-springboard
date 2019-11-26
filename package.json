@@ -18,5 +18,7 @@
     "build": "next start",
     "start": "next start"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "path": "^0.12.7"
+  }
 }

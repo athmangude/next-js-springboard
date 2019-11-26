@@ -1,6 +1,6 @@
 import Router from 'next/router';
-import * as AuthenticationActions from '../flux/authentication/actions';
-import { getCookie } from '../utils/cookie';
+import * as AuthenticationActions from 'Flux/authentication/actions';
+import { getCookie } from 'Utils/cookie';
 
 export default function initialize(ctx) {
     if(ctx.isServer) {
