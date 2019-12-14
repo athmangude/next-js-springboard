@@ -7,7 +7,6 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
 export default ({ children, title="Springboard" }) => {
-    console.log('[rendering top navigation bar layout]');
     return (
         <div className="top-navigation-bar-layout">
             <Head>
