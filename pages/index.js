@@ -23,7 +23,7 @@ export default class Home extends Component {
                 <Container maxWidth="md">
                     <Box my={4}>
                         <Typography variant="h4" gutterBottom>Next.JS Springboard</Typography>
-                        <Typography variant="body1" gutterBottom>Build something awesome</Typography>
+                        <Typography variant="h5" gutterBottom>Build something awesome</Typography>
                         <Panel />
                     </Box>
                 </Container>

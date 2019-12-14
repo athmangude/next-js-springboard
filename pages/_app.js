@@ -1,7 +1,9 @@
 import { Provider } from 'react-redux';
 import App, { Container } from 'next/app';
 import withRedux from 'next-redux-wrapper';
+import { ThemeProvider } from 'styled-components'
 import { configureStore } from 'Flux/configureStore';
+import theme from 'Config/theme';
 
 class MyApp extends App {
     static async getInitialProps({ Component, ctx }) {
@@ -18,7 +20,9 @@ class MyApp extends App {
         return (
             <Container>
                 <Provider store={store}>
-                    <Component {...pageProps} />
+                    <ThemeProvider theme={theme}>
+                        <Component {...pageProps} />
+                    </ThemeProvider>
                 </Provider>
             </Container>
         );
