@@ -29,6 +29,6 @@ class MyApp extends App {
     }
 }
 
-export default withRedux(configureStore, { debug: true })(MyApp);
+export default withRedux(configureStore, { debug: false })(MyApp);
 
 // https://medium.com/@bhavikbamania/a-beginner-guide-for-redux-with-next-js-4d018e1342b2

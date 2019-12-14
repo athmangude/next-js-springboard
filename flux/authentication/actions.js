@@ -6,7 +6,6 @@ import * as AuthenticationActionTypes from './constants';
 
 export function authenticate({ email, password }) {
 	return (dispatch) => {
-		console.log(email, password)
 		return axios({
 			url: `${CONFIG.apiUrl}/authentication/sign-in`,
 			body: {
