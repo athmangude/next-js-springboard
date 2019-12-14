@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import initialize from 'Utils/initialize';
 
+
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+
+import TopNavigationBarLayout from 'Layouts/top-navigation-bar-layout';
+
 @connect((state) => ({ items: state.items }))
 export default class Home extends Component {
     static getInitialProps(ctx) {
@@ -10,9 +17,14 @@ export default class Home extends Component {
     
     render() {
         return (
-            <div>
-                <h1>Home page will come here</h1>
-            </div>
+            <TopNavigationBarLayout title="Home">
+                <Container maxWidth="md">
+                    <Box my={4}>
+                        <Typography variant="h4" gutterBottom>Next.JS Springboard</Typography>
+                        <Typography variant="body1" gutterBottom>Build something awesome</Typography>
+                    </Box>
+                </Container>
+            </TopNavigationBarLayout>
         );
     }
 }
