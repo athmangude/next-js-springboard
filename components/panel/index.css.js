@@ -1,5 +1,4 @@
 export default ({ theme }) => {
-    console.log(theme);
     return `
         background-color: #f0f0f0;
         border: solid 1px #d9d9d9;
