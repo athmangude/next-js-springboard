@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next start",
+    "build": "next build",
     "start": "next start"
   },
   "devDependencies": {
