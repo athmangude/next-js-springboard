@@ -1,4 +1,4 @@
-import ActionButton from 'SharedComponents/action-button';
+import ActionButton from 'Components/action-button';
 
 export default () => (
     <div>
