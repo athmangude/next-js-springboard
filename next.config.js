@@ -9,10 +9,11 @@ module.exports = {
 
         config.resolve.alias = {
             ...(config.resolve.alias || {}),
-            SharedComponents: path.resolve(__dirname, "components"),
+            Components: path.resolve(__dirname, "components"),
             Flux: path.resolve(__dirname, "flux"),
             Config: path.resolve(__dirname, "config"),
             Utils: path.resolve(__dirname, "utils"),
+            Layouts: path.resolve(__dirname, "layouts"),
         };
         return config
     },
