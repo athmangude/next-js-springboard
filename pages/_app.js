@@ -14,6 +14,19 @@ class MyApp extends App {
         };
     }
 
+    componentDidMount() {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/static/sw.js')
+                .then(registration => {
+                    console.log('service worker registration successful')
+                })
+                .catch(err => {
+                    console.warn('service worker registration failed', err.message)
+                })
+        }
+    }
+
     render() {
         const { Component, pageProps, store } = this.props;
 
